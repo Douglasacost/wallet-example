@@ -9,9 +9,9 @@ export type TPolkadotChain = keyof typeof POLKADOT_MAINNET_CHAINS
 export const POLKADOT_MAINNET_CHAINS = {
   'polkadot:91b171bb158e2d3848fa23a9f1c25182': {
     chainId: '91b171bb158e2d3848fa23a9f1c25182',
-    name: 'Polkadot',
+    name: 'Nodle',
     logo: '/chain-logos/polkadot.svg',
-    rgb: '230, 1, 122',
+    rgb: '25, 174, 130',
     rpc: ''
   }
 }
