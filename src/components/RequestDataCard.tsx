@@ -14,13 +14,20 @@ interface IProps {
 export default function RequestDataCard({ data }: IProps) {
   return (
     <Row>
-      <Col>
+      <Col style={{
+        height: '300px',
+        overflow: 'auto'
+      }}>
         <Text h5>Data</Text>
         <CodeBlock
           showLineNumbers={false}
           text={JSON.stringify(data, null, 2)}
           theme={codepen}
           language="json"
+          height="200px"
+          style={{
+            height: '200px',
+          }}
         />
       </Col>
     </Row>

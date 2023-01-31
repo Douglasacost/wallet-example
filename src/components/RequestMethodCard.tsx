@@ -15,7 +15,10 @@ export default function RequestMethodCard({ methods }: IProps) {
     <Row>
       <Col>
         <Text h5>Methods</Text>
-        <Text color="$gray400">{methods.map(method => method).join(', ')}</Text>
+        <Text color="$gray400" style={{
+          height: '200px',
+          overflow: 'auto'
+        }}>{methods.map(method => method).join(', ')}</Text>
       </Col>
     </Row>
   )
