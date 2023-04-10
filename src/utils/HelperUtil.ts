@@ -1,8 +1,3 @@
-import { COSMOS_MAINNET_CHAINS, TCosmosChain } from '@/data/COSMOSData'
-import { EIP155_CHAINS, TEIP155Chain } from '@/data/EIP155Data'
-import { NEAR_TEST_CHAINS, TNearChain } from '@/data/NEARData'
-import { SOLANA_CHAINS, TSolanaChain } from '@/data/SolanaData'
-import { ELROND_CHAINS, TElrondChain } from '@/data/ElrondData'
 import { utils } from 'ethers'
 
 /**
@@ -122,11 +117,6 @@ export function isElrondChain(chain: string) {
  */
 export function formatChainName(chainId: string) {
   return (
-    EIP155_CHAINS[chainId as TEIP155Chain]?.name ??
-    COSMOS_MAINNET_CHAINS[chainId as TCosmosChain]?.name ??
-    SOLANA_CHAINS[chainId as TSolanaChain]?.name ??
-    NEAR_TEST_CHAINS[chainId as TNearChain]?.name ??
-    ELROND_CHAINS[chainId as TElrondChain]?.name ??
     chainId
   )
 }
